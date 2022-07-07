@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Photography Site</title>
+        <meta name = "viewport" content = "width=device-width, intial-scale=1.0">
+		<link rel="icon" type="image/jpg" href="images/Capture2.jpg">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+	
+			
+				
+	
+	<!--Navigation bar-->
+	<!--Css Link -->
+		<head>
+        <link href="answer.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+<!-- Old Code
+        <div class="navigation-bar">
+      
+      
+          <div id="navigation-container">
+      
+            <img src="images/Capture.PNG" alt="KOME">
+      
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="photographer.html">Photographer</a></li>
+              <li><a href="AirBNB.html">AirBNB</a></li>
+			  <li><a href="Clothing.html">Clothing</a></li>
+              <li><a href="electronics.html">Electronics</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+      -->
+		
+	  
+	  <!----- New Navigation Code ------>
+	  <div class="container">
+        <div class="clearfix">
+            <div class="logo-div">
+                <a href=""><img alt="logo" class="image" src="images/Capture.PNG"></a>
+            </div>
+            <div class="menu-div">
+                <nav>
+                    <ul>
+						  <li><a href="index.html">Home</a></li>
+						  <li><a href="photographer.html">Photographer</a></li>
+						  <li><a href="AirBNB.html">AirBNB</a></li>
+						  <li><a href="Clothing.html">Clothing</a></li>
+						  <li><a href="electronics.html">Electronics</a></li>
+						  <li><a href="contact.html">Contact</a></li>
+						  <li><a class="active" href="http://localhost/Online/public_html/Clothing.html#!/~/account">Log in</a></li>
+                          <li><a class="button" href="http://localhost/Online/public_html/Clothing.html#!/~/account">Sign up</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+	  
+      </body>
+        
+		<!-----End of New Navigation Code ------>
+		<!-- header -->
+				<p2>
+                    <span class = "brands">
+                        KOME
+                    </span>
+                    
+                <p2>
+		
+      <!--End of Navigation bar-->
+        
+        <!--image slider start-->
+		<center>
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <a href="index.html"> <img src="images/Capture.PNG" alt="" > </a>
+        </div>
+        <div class="slide">
+          <a href="AirBNB.html"> <img src="images/airbnb.PNG" alt=""> </a>
+        </div>
+        <div class="slide">
+          <a href="index.html#!/ADIDAS-ORIGINALS-MENS-TREFOIL-TURQUOISE-T-SHIRT/p/456379310/category=0"> <img src="images/KOME.PNG" alt=""> </a>
+        </div>
+        <div class="slide">
+          <a href="photographer.html"> <img src="images/IMG_3401.jpg" alt=""> </a>
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+
+    <script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if(counter > 4){
+        counter = 1;
+      }
+    }, 5000);
+    </script>
+			</center>
+			
+			
+		<!-- End Of Slideshow-->
+			
+        
+           
+        <!-- footer -->
+		<!--
+        <footer class = "footer">
+            <div class = "footer-container container">
+                <div>
+                    <h2>SARAH DOE</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+                <div>
+                    <h3>Free Subscription!</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+
+                    <div class = "subs">
+                        <i class = "fas fa-envelope"></i>
+                        <input type = "email" id = "email" placeholder="Email Address">
+                        <button type = "submit">SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+			
+			<div class = "social-icons">
+                    <ul>
+                        <li>
+                            <a href = "#"><i class = "fab fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href = "#"><i class = "fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href = "https://www.instagram.com/kome_merchandise/"><i class = "fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href = "#"><i class = "fab fa-pinterest"></i></a>
+                        </li>
+                    </ul>
+                </div>
+			
+            <p>&copy; Copyright SARAHDOE . SIMPLE AND NICE TEMPALTE</p>
+        </footer>  --->
+        <!-- end of footer -->
+        
+		 <!-- footer -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Web design</a></li>
+                            <li><a href="#">Development</a></li>
+                            <li><a href="#">Hosting</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text">
+                        <h3>Company Name</h3>
+                        <p>Kome</p>
+                    </div>
+                    <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+                </div>
+                <p class="copyright">KOME © 2020</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+
+<!-- Credit to https://epicbootstrap.com/snippets/footer-dark -->
+	
+		<!-- end of footer -->
+
+        <script src="script.js"></script>    
+    
+</html>
